@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+name="viewport"
+content="width=device-width, initial-scale=1"
+>
+
+<title>
+
+Sistema de Inventario
+
+</title>
+
+<link
+rel="stylesheet"
+href="style.css"
+>
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- LOGIN -->
+<!-- ========================= -->
+
+<div
+id="login"
+class="contenedor"
+>
+
+<h1>
+
+SISTEMA DE INVENTARIO
+
+</h1>
+
+<input
+
+id="usuario"
+
+type="text"
+
+placeholder="Usuario"
+
+>
+
+<input
+
+id="clave"
+
+type="password"
+
+placeholder="Contraseña"
+
+>
+
+<button
+
+onclick="iniciarSesion()"
+
+>
+
+Ingresar
+
+</button>
+
+</div>
+
+
+
+<!-- ========================= -->
+<!-- PANEL PRINCIPAL -->
+<!-- ========================= -->
+
+<div
+id="panel"
+class="oculto"
+>
+
+<header>
+
+<h2>
+
+Sistema de Inventario
+
+</h2>
+
+<button
+
+onclick="cerrarSesion()"
+
+>
+
+Cerrar Sesión
+
+</button>
+
+</header>
+
+
+
+<!-- ========================= -->
+<!-- REGISTRO DE PRODUCTOS -->
+<!-- ========================= -->
+
+<section
+class="registro"
+>
+
+<input
+
+id="nombre"
+
+placeholder="Producto"
+
+>
+
+<input
+
+id="cantidad"
+
+type="number"
+
+placeholder="Cantidad"
+
+>
+
+<input
+
+id="precio"
+
+type="number"
+
+placeholder="Precio"
+
+>
+
+<select
+id="categoria"
+>
+
+<option value="">
+
+Seleccione categoría
+
+</option>
+
+<option>Tecnología</option>
+
+<option>Oficina</option>
+
+<option>Papelería</option>
+
+<option>Limpieza</option>
+
+<option>Otro</option>
+
+</select>
+
+<button
+
+onclick="guardarProducto()"
+
+>
+
+Guardar
+
+</button>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- TABLA DE INVENTARIO -->
+<!-- ========================= -->
+
+<section>
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>ID</th>
+
+<th>Producto</th>
+
+<th>Categoría</th>
+
+<th>Cantidad</th>
+
+<th>Precio</th>
+
+<th>Acciones</th>
+
+</tr>
+
+</thead>
+
+<tbody id="tabla">
+
+</tbody>
+
+</table>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- REPORTE -->
+<!-- ========================= -->
+
+<section
+class="reportes"
+>
+
+<button
+
+onclick="generarReporte()"
+
+>
+
+Generar Reporte Excel
+
+</button>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- MOVIMIENTOS -->
+<!-- ========================= -->
+
+<section
+class="movimientos"
+>
+
+<h3>
+
+Registrar Movimiento
+
+</h3>
+
+<select
+id="movNombre"
+>
+
+<option value="">
+
+Seleccione un producto
+
+</option>
+
+</select>
+
+<input
+
+id="movCantidad"
+
+type="number"
+
+min="1"
+
+step="1"
+
+placeholder="Cantidad"
+
+>
+
+<button
+
+onclick="registrarMovimiento('entrada')"
+
+>
+
+Registrar Entrada
+
+</button>
+
+<button
+
+onclick="registrarMovimiento('salida')"
+
+>
+
+Registrar Salida
+
+</button>
+
+</section>
+
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

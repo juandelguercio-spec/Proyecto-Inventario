@@ -1,0 +1,305 @@
+/* ==========================
+ESTILOS GENERALES
+========================== */
+
+body{
+
+margin:0;
+
+font-family:Arial,sans-serif;
+
+background:#f4f6f9;
+
+}
+
+/* ==========================
+LOGIN
+========================== */
+
+.contenedor{
+
+width:350px;
+
+margin:100px auto;
+
+padding:30px;
+
+background:white;
+
+border-radius:10px;
+
+box-shadow:
+
+0 0 20px
+
+rgba(
+0,
+0,
+0,
+0.15
+
+);
+
+}
+
+/* ==========================
+INPUTS Y SELECT
+========================== */
+
+input,
+select{
+
+width:100%;
+
+padding:12px;
+
+margin-top:10px;
+
+box-sizing:border-box;
+
+border:
+
+1px solid #ddd;
+
+border-radius:6px;
+
+}
+
+/* ==========================
+BOTONES
+========================== */
+
+button{
+
+padding:12px;
+
+margin-top:10px;
+
+width:100%;
+
+cursor:pointer;
+
+border:none;
+
+border-radius:6px;
+
+background:#1e88e5;
+
+color:white;
+
+font-size:15px;
+
+}
+
+button:hover{
+
+background:#1565c0;
+
+}
+
+/* ==========================
+OCULTAR PANEL
+========================== */
+
+.oculto{
+
+display:none;
+
+}
+
+/* ==========================
+ENCABEZADO
+========================== */
+
+header{
+
+background:#1565c0;
+
+color:white;
+
+padding:20px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+}
+
+header button{
+
+width:auto;
+
+padding:10px 20px;
+
+}
+
+/* ==========================
+REGISTRO PRODUCTOS
+========================== */
+
+.registro{
+
+display:grid;
+
+grid-template-columns:
+
+1fr
+1fr
+1fr
+1fr
+auto;
+
+gap:10px;
+
+padding:20px;
+
+}
+
+/* ==========================
+TABLA
+========================== */
+
+table{
+
+width:100%;
+
+border-collapse:collapse;
+
+background:white;
+
+}
+
+th{
+
+background:#1e88e5;
+
+color:white;
+
+}
+
+th,
+td{
+
+padding:12px;
+
+border:
+
+1px solid #ddd;
+
+text-align:center;
+
+}
+
+tr:hover{
+
+background:#f8f8f8;
+
+}
+
+/* ==========================
+BOTONES TABLA
+========================== */
+
+td button{
+
+width:90px;
+
+margin:4px;
+
+}
+
+/* ==========================
+REPORTES
+========================== */
+
+.reportes{
+
+padding:20px;
+
+background:white;
+
+margin:20px;
+
+border-radius:10px;
+
+}
+
+.reportes p{
+
+font-size:18px;
+
+}
+
+/* ==========================
+REGISTRAR DIA
+========================== */
+
+.movimientos{
+
+padding:20px;
+
+background:white;
+
+margin:20px;
+
+border-radius:10px;
+
+display:grid;
+
+grid-template-columns:
+
+1fr
+1fr
+1fr
+200px
+200px;
+
+gap:10px;
+
+}
+
+.movimientos h3{
+
+grid-column:
+
+1/-1;
+
+}
+
+/* ==========================
+RESPONSIVE
+========================== */
+
+@media(
+
+max-width:900px
+
+){
+
+.registro{
+
+grid-template-columns:
+
+1fr;
+
+}
+
+.movimientos{
+
+grid-template-columns:
+
+1fr;
+
+}
+
+header{
+
+flex-direction:column;
+
+gap:10px;
+
+}
+
+}
